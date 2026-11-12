@@ -1,0 +1,93 @@
+{
+  "name": "Report a website or showcase issue",
+  "description": "Report a broken link, layout problem or documentation error without sharing private data.",
+  "title": "[Issue] ",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "Use this form for public website/showcase feedback only. Do not include passwords, tokens, student/customer records or unredacted private screenshots. Use the live website for admissions, orders and account support."
+      }
+    },
+    {
+      "type": "input",
+      "id": "page",
+      "attributes": {
+        "label": "Affected public page",
+        "description": "Paste the public URL. Remove any private query parameters."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "device",
+      "attributes": {
+        "label": "Device or view",
+        "options": [
+          "Phone",
+          "Tablet",
+          "Desktop/laptop",
+          "GitHub documentation"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "browser",
+      "attributes": {
+        "label": "Browser and version",
+        "placeholder": "For example, Chrome on Android"
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "Steps to reproduce",
+        "description": "Describe the public-page steps. Do not submit false registrations or orders just to test."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "expected",
+      "attributes": {
+        "label": "Expected result"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "actual",
+      "attributes": {
+        "label": "Actual result",
+        "description": "If adding a screenshot, remove private information first."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "privacy",
+      "attributes": {
+        "label": "Privacy check",
+        "options": [
+          {
+            "label": "I have not included credentials, personal records or private customer/student information.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}
